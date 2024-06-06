@@ -1,4 +1,6 @@
-package com.tnsif.day12;
+package com.tnsif.day12.singlethreaded_ex;
+
+import com.tnsif.day12.MyTask;
 
 public class SingleThreadedApplication {
 
