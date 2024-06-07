@@ -1,13 +1,9 @@
 package com.tnsif.day13.synchronization;
 
-//import java.util.Scanner;
 public class BankDemo {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-//		Scanner a1 = new Scanner(System.in);
-//		
-//		System.out.println("enter Account No = " + accNo + "Name = " + name + "Balance = " + balance);
 		Account a1 = new Account(1110,"Divyanka",45000);
 		
 		
