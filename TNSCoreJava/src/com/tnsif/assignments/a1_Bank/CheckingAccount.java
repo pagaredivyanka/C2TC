@@ -1,4 +1,4 @@
-package com.tnsif.PracticeAssignments.a1_BankTransaction;
+package com.tnsif.assignments.a1_Bank;
 
 public class CheckingAccount extends Account {
 	
@@ -16,6 +16,4 @@ public class CheckingAccount extends Account {
 	double getBalance() {
 		return 0;
 	}
-	
-	
 }

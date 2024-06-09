@@ -1,4 +1,4 @@
-package com.tnsif.PracticeAssignments.a1_BankTransaction;
+package com.tnsif.assignments.a1_Bank;
 
 public abstract class Account {
 	abstract void deposit(double amount);
