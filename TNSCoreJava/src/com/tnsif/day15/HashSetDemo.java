@@ -61,7 +61,6 @@ public class HashSetDemo {
 		System.out.println("Second Set : " + hs2);
 		System.out.println("-----------------------");
 		
-		hs1.clear();
 		hs1.add(90);
 		hs1.add(30);
 		hs1.add(50);
