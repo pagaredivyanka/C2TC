@@ -1,4 +1,4 @@
-package com.tnsif.day16;
+package com.tnsif.day16_Strings;
 
 public class StringBufferDemo {
 	public static void main(String[] args) {
