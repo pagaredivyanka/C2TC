@@ -20,24 +20,32 @@ public class StreamAPIDemo {
 		
 //		skip
 		numStream = Stream.of(1,5,3,7,2,8,2,5);
+		count = numStream.skip(3).count();
+//		java.lang.IllegalArgumentException
+//		count = numStrea.skip(-2).count();
+		System.out.println("Total Values after skipping : " + count);
+
+//		limit
+		numStream = Stream.of(1,5,3,7,2,8,2,5);
+		numStream = numStream.limit(5);
+		count = numStream.count();
 		
 		System.out.println("Total distinct Values : " + count);
 
+//		Terminal op - collect
 		
 		numStream = Stream.of(1,5,3,7,2,8,2,5);
-		System.out.println("Total distinct Values : " + count);
-
-		
-		
-		numStream = Stream.of(1,5,3,7,2,8,2,5);
-		System.out.println("Total distinct Values : " + count);
-
-		
+		List<Integer> numList = numStream.collect(Collectors.toList());
+		System.out.println(numList);
 		
 		numStream = Stream.of(1,5,3,7,2,8,2,5);
-		System.out.println("Total distinct Values : " + count);
+		List<Integer> distinctInt = numStream.distinct().collect(Collectors.toList());
+		System.out.println(distinctInt);
 
-		
+//		forEach - perform operation on each value of stream
+		numStream = Stream.of(1,5,3,7,2,8,2,5);
+//		method reference
+		numStream.forEach(System.out::print);
 		
 		
 	}
