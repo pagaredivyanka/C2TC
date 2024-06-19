@@ -8,6 +8,6 @@ public class Student {
 	static final int BATCH_STRENGTH = 54;
 	
 	public Student() {
-		System.out.println("Default ");
+		System.out.println("Default");
 	}
 }
