@@ -30,9 +30,8 @@ public class FunctionalInterface {
 		cityStream.forEach(consumerObject);
 		
 //		3. Supplier
-		Supplier<Integer> supplierObject = () -> {
-			return 10;
-		};
+		Supplier<Integer> supplierObject = () -> {return 10;};
+		System.out.println(supplierObject.get());
 		
 		Supplier<String> supplierObject1 = () -> "Hello Ritesh";
 		System.out.println(supplierObject1.get());
@@ -61,7 +60,42 @@ public class FunctionalInterface {
 		System.out.println(sqrtList);
 		System.out.println("**************************************************");
 		
+//		5. BiFunction<T, U, R>
 		
+//		reduce()
+		numStream = Stream.of(1,2,3,4,5);
+		Optional<Integer> sum = numStream.reduce((a,b) -> a+b );
+		
+		if(sum.isPresent())
+			System.out.println("Sum is " + sum);
+		
+		numStream = Stream.of(10,12,13,14,15);
+		Optional<Integer> max = numStream.reduce((a,b) -> {
+			if(a>b)
+				return a;
+			else {
+				return b;
+			}
+		});
+		
+		if(max.isPresent()) {
+			System.out.println("Max is " + max);
+		}
+		
+		numStream = Stream.of(10,12,30,14,15);
+		Optional<Integer> min = numStream.reduce((a,b) -> a < b ? a:b);
+		
+		if(min.isPresent()) {
+			System.out.println("Min is " + min);
+		}
+		
+		BinaryOperator<Integer> sumFunction = (a,b) -> a+b;
+		numStream = Stream.of(10,12,30,14,15);
+		sum = numStream.reduce(sumFunction);
+		
+		if(sum.isPresent() ) {
+			System.out.println("Sum is " + sum);
+		}
 	}
 
 }
