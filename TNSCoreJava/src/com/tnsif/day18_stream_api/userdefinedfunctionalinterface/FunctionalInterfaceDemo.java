@@ -1,3 +1,6 @@
+//parameter -> s
+//variable name -> obj
+
 package com.tnsif.day18_stream_api.userdefinedfunctionalinterface;
 
 public class FunctionalInterfaceDemo {
@@ -47,5 +50,11 @@ public class FunctionalInterfaceDemo {
 
 
 
-//parameter -> s
-//variable name -> obj
+//Notes - 
+
+/*
+ *  arrayList is a generic class we can create array of int, float, string, student, customer any thing <T>
+ *  
+ *  
+ */
+
