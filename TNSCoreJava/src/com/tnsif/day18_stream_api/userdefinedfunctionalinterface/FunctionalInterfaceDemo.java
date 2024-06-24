@@ -13,7 +13,7 @@ public class FunctionalInterfaceDemo {
 		
 		System.out.println("______________________________________________");
 		
-		ArithmaticOperations opr;
+		ArithmeticOperations opr;
 		int result;
 		
 		opr = (x,y)-> x + y;
