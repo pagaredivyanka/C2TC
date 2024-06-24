@@ -2,6 +2,9 @@ package com.tnsif.day18_stream_api.userdefinedfunctionalinterface;
 
 public class FunctionalInterfaceDemo {
 	public static void main(String[] args) {
+		
+//		constants are must be in Capital
+//		function name -> small
 		GreetInterface obj = (s) -> System.out.println("Hello " + s);
 		
 		obj.greet("Students");
