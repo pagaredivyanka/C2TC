@@ -1,5 +1,5 @@
 // annotations
-//use -> to provide information to Compiler about the program
+//use -> to provide information(MetaData) to Compiler 
 //used in development for checking the features are coming from right place or not
 
 package com.tnsif.day20_annotations;
@@ -37,3 +37,5 @@ public class Demo {
 //		an1 -> get the information of SmartTV smartly and if there is no annotation the it gives 'Nun'
 	}
 }
+
+

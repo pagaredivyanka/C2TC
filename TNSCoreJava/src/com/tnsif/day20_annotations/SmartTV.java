@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 // for what we are creating annotation 
-//examples -> class, interface, Parameter, etc
+//examples -> class, interface, constructors, variables, Parameter, etc
 
 @Target(ElementType.TYPE)  //TYPE -> interface
 @Retention(RetentionPolicy.RUNTIME)
