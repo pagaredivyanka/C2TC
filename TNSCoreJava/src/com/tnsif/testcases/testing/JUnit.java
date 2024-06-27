@@ -1,4 +1,3 @@
-
 /*
 
  * Purpose of testing -> success of application and what application want to do ?
@@ -7,7 +6,7 @@
  
  * JavaUnit -> integrated tool (Java Method,Classes) for unit testing of a java 
  * Types -> JUnit1, JUnit2, JUnit3 
- * features -> create dynamic testcases
+ * features -> create dynamic test cases
  * JUnit5 = JUnit Platform + 
  * provide testing framework (API)
  
@@ -28,4 +27,9 @@
  * @After -> check something after execution of other test case
  * @Ignore
  * 
+ 
+ 
+ 
+ * JUnit Engine -> use to run test cases
+ 
  */
