@@ -44,4 +44,34 @@ public class TestClass {
 //		long actual = Operations.getFactorial(-6);   //there is no factorial for -ve no we get -1
 		Assertions.assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testForPrime() {
+		Assertions.assertTrue(Operations.isPrime(5));
+	}
+	
+	@Test
+	public void testForNonPrime() {
+		Assertions.assertFalse(Operations.isPrime(9));
+	}
+	
+	@Test
+	public void testForNumberPalindrome() {
+		Assertions.assertTrue(Operations.isPalindrome(121));
+	}
+	
+	@Test
+	public void testForNumberNonPalindrome() {
+		Assertions.assertFalse(Operations.isPalindrome(123));
+	}
+	
+	@Test
+	public void testForStringPalindrome() {
+		Assertions.assertTrue(Operations.isPalindrome("CAC"));
+	}
+	
+	@Test
+	public void testForStringNonPalindrome() {
+		Assertions.assertFalse(Operations.isPalindrome("CAR"));
+	}
 }

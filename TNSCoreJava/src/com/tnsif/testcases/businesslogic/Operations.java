@@ -13,4 +13,28 @@ public class Operations {
 			f = f*i;
 		return f;
 	}
+	
+	public static boolean isPrime(int n) {
+		boolean primeFlag = true;  //primeFlag = true, if prime
+		for(int i = 2; i<=n/2; i++) {
+			if (n%i == 0) {
+				primeFlag = false;  //primeFlag = false, if non prime
+				break;
+			}
+		}
+		return primeFlag;
+	}
+	
+	public static boolean isPalindrome(int n) {
+		int n1 = n, rev = 0;
+		while(n != 0) {
+			rev = rev*10+n%10;
+			n = n/10;
+		}
+		return n1 == rev;
+	}
+	
+	public static boolean isPalindrome(String s) {
+		return (s.equals(new StringBuffer(s).reverse().toString()));
+	}
 }
