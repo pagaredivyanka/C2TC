@@ -5,7 +5,7 @@
 // Assertion is True then test case is Pass
 // Assertion is false then test case is false
 
-package com.tnsift.testcases.testing;
+package com.tnsif.testcases.testing;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
