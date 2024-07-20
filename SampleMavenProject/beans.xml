@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <bean id ="p1" class ="sample.demo.Person">
+  	<property name = "name " value ="Divyanka"> </property>
+  	<property name = "contactno" value ="4545454545"></property>
+  </bean>
+  
+  <bean id ="p2" class ="sample.demo.Person" scope="Prototype">
+  	<property name = "name " value ="Ritesh"> </property>
+  	<property name = "contactno" value ="8484848484"></property>
+  </bean>
+  
+</beans>
